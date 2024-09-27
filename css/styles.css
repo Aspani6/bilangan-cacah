@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #003ffe;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.2rem;
+}
+
+.bg-image {
+  height: 80vh;
+  background-image: url("../img/bg.jpeg");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.operation {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.calculate {
+  width: 200px;
+  height: auto;
+  background-color: #0be7ff;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spelling {
+  width: 300px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #0be7ff;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+span {
+  color: rgb(2, 2, 207);
+}
+
+.result {
+  width: 200px;
+  height: auto;
+  background-color: #0be7ff;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000;
+  font-weight: bold;
+}
+
+#explanation,
+#interactive {
+  margin: 20px 0;
+}
+
+#interactive input,
+#interactive button {
+  padding: 10px;
+  margin: 5px;
+}
+
+#result p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 12px;
+  background-color: #003ffe;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .operation {
+    flex-direction: column;
+    margin: 0px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calculate {
+    width: 100%;
+  }
+  
+  .spelling {
+    width: 100%;
+  }
+
+  .result {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

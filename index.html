@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembelajaran Bilangan Cacah</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bilangan Cacah</h1>
+    </header>
+
+    <main>
+      <div class="bg-image">
+        <section id="explanation">
+          <h2>Penjelasan</h2>
+          <p>
+            Bilangan cacah adalah bilangan bulat yang tidak negatif, dimulai
+            dari 0.
+          </p>
+        </section>
+
+        <section id="interactive">
+          <h2>Interaktif</h2>
+          <p>Masukkan bilangan cacah:</p>
+          <div class="operation">
+            <div class="calculate">
+              <input
+                type="number"
+                id="numberInput"
+                placeholder="Masukkan bilangan"
+              />
+              <button onclick="splitNumber()">Proses</button>
+            </div>
+            <div class="spelling" id="result">
+              <p>Penyebutan : <span id="resultText"></span></p>
+            </div>
+            <div class="result" id="result">
+              <p>Ratusan Ribu : <span id="ratusanRibu"></span></p>
+              <p>Puluhan Ribu : <span id="puluhanRibu"></span></p>
+              <p>Ribuan : <span id="ribuan"></span></p>
+              <p>Ratusan : <span id="ratusan"></span></p>
+              <p>Puluhan : <span id="puluhan"></span></p>
+              <p>Satuan : <span id="satuan"></span></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
